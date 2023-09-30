@@ -1,0 +1,81 @@
+/* 전체 페이지 스타일링 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* 헤더 스타일링 */
+.header {
+    background-color: #0077c0;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 페이지 타이틀 스타일링 */
+.page-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* 네비게이션 바 스타일링 */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0077c0;
+}
+
+.nav-link {
+    font-size: 18px;
+    color: #333;
+    margin-right: 20px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #0077c0;
+}
+
+/* 검색 버튼 스타일링 */
+#btn_search {
+    background-color: #0077c0;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+#btn_search:hover {
+    background-color: #00508e;
+}
+
+/* 테이블 스타일링 */
+.table {
+    background-color: #fff;
+}
+
+.table th {
+    background-color: #0077c0;
+    color: #fff;
+}
+
+/* 버튼 스타일링 */
+.btn-primary {
+    background-color: #0077c0;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #00508e;
+}
