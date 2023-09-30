@@ -26,25 +26,26 @@ body {
 
 /* 네비게이션 바 스타일링 */
 .navbar {
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #000 !important; /* 검은색 배경 색상 */
+    color: #fff !important; /* 글자 색상을 흰색으로 설정 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
 }
 
 .navbar-brand {
-    font-size: 28px;
-    font-weight: bold;
-    color: #0077c0;
+    font-size: 28px !important;
+    font-weight: bold !important;
+    color: #fff !important; /* 글자 색상을 흰색으로 설정 */
 }
 
 .nav-link {
-    font-size: 18px;
-    color: #333;
-    margin-right: 20px;
-    transition: color 0.3s;
+    font-size: 18px !important;
+    color: #fff !important; /* 글자 색상을 흰색으로 설정 */
+    margin-right: 20px !important;
+    transition: color 0.3s !important;
 }
 
 .nav-link:hover {
-    color: #0077c0;
+    color: #0077c0 !important; /* 호버 시 글자 색상을 원하는 색상으로 변경 */
 }
 
 /* 검색 버튼 스타일링 */
@@ -102,11 +103,15 @@ body {
     background-color: #f0f0f0;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 }
 
 /* 푸터 스타일 */
 .blog-footer {
+    position: fixed; /* 푸터를 고정합니다. */
+    left: 0;
+    bottom: 0; /* 화면 하단에 위치하도록 설정 */
+    width: 100%;
     background-color: #0077c0;
     color: #fff;
     padding: 20px 0;
