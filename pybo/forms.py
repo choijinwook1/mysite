@@ -1,5 +1,5 @@
 from django import forms
-from pybo.models import Question, Answer
+from pybo.models import Product, Question, Answer
 
 
 class QuestionForm(forms.ModelForm):
@@ -18,4 +18,18 @@ class AnswerForm(forms.ModelForm):
         fields = ['content']
         labels = {
             'content': '답변내용',
+        }
+
+class ProductForm(forms.ModelForm): # ModelForm 은 장고 모델 폼
+    class Meta: # 장고 모델 폼은 반드시 내부에 Meta 클래스 가져야 함
+        model = Product
+        fields = ['pcode', 'pname', 'unitprice', 'discountrate', 'mainfunc', 'detailfunc', 'imgfile']
+        labels = {
+            'pcode': '제품 코드 ',
+            'pname': '제 품 명 ',
+            'unitprice': '단    가 ',
+            'discountrate': '할 인 율 ',
+            'mainfunc': '주요 기능',
+            'detailfunc': '상세 기능',
+            'imgfile': '이 미 지'
         }

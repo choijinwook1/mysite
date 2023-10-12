@@ -22,23 +22,7 @@
 <div class="container my-3">
     <div class="row">
         <div class="col-md-3">
-            <div class="blog-sidebar">  <!-- 사이드바 스타일 적용 -->
-                <!-- 사이드바 내용 추가 -->
-                <nav id="sidebar" class="border-top border-secondary">
-                    <div class="list-group">
-                        <a class="rounded-0 list-group-item list-group-item-action list-group-item-light active" href="">질문과답변</a>
-                        <a class="rounded-0 list-group-item list-group-item-action list-group-item-light " href="">기원테크</a>
-                        <!-- 다른 링크들 추가 -->
-                        <a class="rounded-0 list-group-item list-group-item-action list-group-item-light " href="">버그및건의</a>
-                    </div>
-                </nav>
-
-                <ul class="my-3 small" style="padding-left:2em;">
-                    <li class="my-1"><a href="" target="_blank">testtest</a></li>
-                    <li class="my-1"><a href="" target="_blank">testtest</a></li>
-                    <li class="my-1"><a href="" target="_blank">testtest</a></li>
-                </ul>
-            </div>
+            {% include "blog_sidebar.html" %}
         </div>
         <div class="col-md-9">
             <div class="blog-content">  <!-- 본문 스타일 적용 -->

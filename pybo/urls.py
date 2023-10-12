@@ -1,6 +1,6 @@
 from django.urls import path
 
-from .views import base_views, question_views, answer_views
+from .views import base_views, question_views, answer_views , kiwon_views
 
 app_name = 'pybo'
 
@@ -8,6 +8,9 @@ urlpatterns = [
     # base
     path('', base_views.index, name='index'),
     path('<int:question_id>/', base_views.detail, name='detail'),
+
+    path('', kiwon_views.kiwon, name='kiwon'),
+    path('<int:question_id>/', kiwon_views.detail, name='detail'),
 
     # question
     path('question/create/', question_views.question_create, name='question_create'),
